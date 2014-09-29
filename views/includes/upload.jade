@@ -1,0 +1,7 @@
+extends ../layout
+
+block content
+    h2 Upload file
+    form#upload-form(action="/upload", method="POST", enctype="multipart/form-data")
+        input#file-input(name="file-input", type="file")
+        input#submit(value="Upload file", type="submit")    
