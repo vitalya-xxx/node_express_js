@@ -14,8 +14,8 @@ server.listen(port, function () {
 });
 
 app.get('/', function (req, res) { 
-    doc.title = 'Upload File Page'
-    res.render('includes/upload', {'doc' : doc}); 
+    doc.title = 'Upload File Link'
+    res.render('includes/start', {'doc' : doc}); 
 });
 
 app.get('/start', function (req, res) { 
